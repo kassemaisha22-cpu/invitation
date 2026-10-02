@@ -1,0 +1,571 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    
+}
+
+
+/* =========================
+   PAGE 1
+========================= */
+
+.page1 {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #b95c7b,
+        #d7839e,
+        #c86b88
+    );
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.invitation-card {
+
+    width: 470px;
+
+    min-height: 650px;
+
+    background: #fffdfd;
+
+    border-radius: 12px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    padding-top: 55px;
+
+    box-shadow:
+        0 20px 50px rgba(70, 20, 40, 0.3);
+}
+
+/* flower */
+.flower {
+    position:absolute;
+    width: 130px;
+    height:auto;
+    pointer-events: none;
+}
+.flower-top-left{
+    top:0;
+    left:0;
+    }
+.flower-bottom-right{
+    botton:0;
+    right:0;
+    transform: rotate(180deg);
+}    
+/* =========================
+   HEART
+========================= */
+
+.heart {
+
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 55px;
+
+    background: #b64f70;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 45px;
+}
+
+
+/* =========================
+   NAMES
+========================= */
+
+.names {
+    color: #a64d6c;
+}
+
+.names h1 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 62px;
+
+    font-weight: 400;
+
+    line-height: 0.9;
+}
+
+
+.and {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 38px;
+
+    margin: 10px 0;
+}
+
+
+/* =========================
+   SEPARATOR
+========================= */
+
+.separator {
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #b45c76;
+
+    margin: 30px 0;
+}
+
+
+.separator span {
+
+    width: 55px;
+
+    height: 1px;
+
+    background: #c99aaa;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.date {
+
+    font-size: 28px;
+
+    color: #a45a70;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   INVITE
+========================= */
+
+.invite {
+
+    font-size: 23px;
+
+    color: white;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   OPEN BUTTON
+========================= */
+
+.open-btn {
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: center;
+margin: -40px;
+    width: 170px;
+    height: 65px;
+
+    background: linear-gradient(
+        90deg,
+        #dc7393,
+        #c95076
+    );
+
+    border-radius: 40px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 26px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 8px 20px rgba(150, 50, 90, 0.3);
+
+    transition: 0.3s;
+}
+
+
+.open-btn:hover {
+
+    transform: scale(1.06);
+
+}
+
+
+/* =========================
+   FLOWERS
+========================= */
+
+.flower {
+
+    position: absolute;
+
+    font-size: 120px;
+
+    opacity: 0.7;
+}
+
+
+.flower-top {
+
+    top: -25px;
+
+    left: -35px;
+}
+
+
+.flower-bottom {
+
+    bottom: -25px;
+
+    right: -35px;
+
+    transform: rotate(180deg);
+}
+
+
+/* =========================
+   PAGE 2
+========================= */
+
+.page2 {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background:  #b95c7b;
+       
+
+        display: flex;
+
+    justify-content: center;
+
+    padding: 25px;
+
+    /* بالبداية مخفية */
+
+    display: none;
+}
+
+
+/*
+   لما نضغط Open
+   href="#page2"
+   
+   الصفحة الثانية تصبح ظاهرة
+*/
+
+.page2:target {
+
+    display: flex;
+
+}
+
+
+/* =========================
+   PAGE 2 CARD
+========================= */
+
+.invitation-details {
+
+    width: 650px;
+
+    min-height: 1000px;
+
+    background: white;
+
+    border: 1px solid #d6bd82;
+
+    text-align: center;
+
+    padding: 55px 45px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   TOP TITLE
+========================= */
+
+.top-title {
+
+    color: #a55b6d;
+
+    font-size: 20px;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 55px;
+}
+
+
+/* =========================
+   BIG NAMES
+========================= */
+
+.big-names {
+
+    color: #a34b68;
+}
+
+
+.big-names h1 {
+
+    font-family: "Great Vibes", cursive;
+
+    font-size: 85px;
+
+    font-weight: 400;
+
+    line-height: 1;
+}
+
+
+.and2 {
+
+    font-family: "Great Vibes", cursive;
+
+    color: #a34b68;
+
+    font-size: 45px;
+
+    margin: 8px 0;
+}
+
+
+/* =========================
+   GOLD LINE
+========================= */
+
+.gold-line {
+
+    width: 70%;
+
+    height: 1px;
+
+    background: #cdb77f;
+
+    margin: 70px auto 90px;
+}
+
+
+/* =========================
+   CEREMONY
+========================= */
+
+.ceremony h2 {
+
+    color: #a55b6d;
+
+    font-size: 29px;
+
+    letter-spacing: 1px;
+
+    font-weight: 600;
+}
+
+
+.gold-small {
+
+    width: 60%;
+
+    height: 1px;
+
+    background: #cdb77f;
+
+    margin: 25px auto 60px;
+}
+
+
+.announcement {
+
+    color: #a55b6d;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================
+   NAMES
+========================= */
+
+.ceremony h3 {
+
+    font-family: "Great Vibes", cursive;
+
+    color: #a34b68;
+
+    font-size: 65px;
+
+    font-weight: 400;
+}
+
+
+/* =========================
+   DATE
+========================= */
+
+.event-date {
+
+    color: #a55b6d;
+
+    font-size: 24px;
+
+    margin: 40px 0;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.info {
+
+    display: flex;
+
+    justify-content: space-around;
+
+    gap: 20px;
+
+    border-top: 1px solid #d5bd85;
+
+    border-bottom: 1px solid #d5bd85;
+
+    padding: 25px 10px;
+}
+
+
+.info div {
+
+    color: #a55b6d;
+}
+
+
+.info strong {
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+}
+
+
+.info p {
+
+    margin-top: 8px;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .page1 {
+        padding: 12px;
+    }
+
+    .invitation-card {
+        width: 100%;
+        min-height: 620px;
+    }
+
+    .heart {
+        width: 75px;
+        height: 75px;
+        font-size: 35px;
+        margin-bottom: 45px;
+    }
+
+    .names h1 {
+        font-size: 52px;
+    }
+
+    .date {
+        font-size: 23px;
+    }
+
+    .invitation-details {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .top-title {
+        font-size: 15px;
+    }
+
+    .big-names h1 {
+        font-size: 65px;
+    }
+
+    .ceremony h2 {
+        font-size: 22px;
+    }
+
+    .info {
+        flex-direction: column;
+    }
+
+}
